@@ -1,8 +1,4 @@
 pandas
 joblib
-streamlit
 scikit-learn
 xgboost
-numpy
-seaborn
-XGBRegressor
