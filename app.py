@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 def app():
-    model=joblib.load('model.h5')
+    model=joblib.load('model2.json')
     st.header("Epsilon Diploma Final Project")
     st.subheader('Used Cars Prediction in Egypt ')
     st.write("This project predicts used cars price based on some features")
