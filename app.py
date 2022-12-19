@@ -5,7 +5,7 @@ from xgboost import XGBRegressor
 xgb = XGBRegressor()
 
 def app():
-    xgb.load_model('model2.json')
+    x=xgb.load_model('model2.json')
     st.header("Epsilon Diploma Final Project")
     st.subheader('Used Cars Prediction in Egypt ')
     st.write("This project predicts used cars price based on some features")
@@ -150,7 +150,7 @@ def app():
                 )
         st.write("Input Data: ")
         st.dataframe(df)
-        pred = model2.predict(df)
+        pred = x.predict(df)
         st.write(F"Prediction: {pred}")
 
 app()
