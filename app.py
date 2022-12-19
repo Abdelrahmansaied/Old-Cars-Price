@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 from xgboost import XGBRegressor
-h = XGBRegressor()
-
-
 def app():
     model=joblib.load('model.h5')
     st.header("Epsilon Diploma Final Project")
