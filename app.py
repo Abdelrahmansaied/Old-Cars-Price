@@ -6,7 +6,7 @@ h = XGBRegressor()
 
 
 def app():
-    i=h.load_model("model2.json")
+    model=joblib.load('model.h5')
     st.header("Epsilon Diploma Final Project")
     st.subheader('Used Cars Prediction in Egypt ')
     st.write("This project predicts used cars price based on some features")
@@ -151,7 +151,7 @@ def app():
                 )
         st.write("Input Data: ")
         st.dataframe(df)
-        pred = i.predict(df)
+        pred = model.predict(df)
         st.write(F"Prediction: {pred}")
 
 app()
