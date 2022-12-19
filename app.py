@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 from xgboost import XGBRegressor
-xgb = XGBRegressor()
 h = xgb.XGBRegressor()
 
 
