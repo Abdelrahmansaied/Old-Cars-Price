@@ -3,9 +3,11 @@ import pandas as pd
 import joblib
 from xgboost import XGBRegressor
 xgb = XGBRegressor()
+h = xgb.XGBRegressor()
+
 
 def app():
-    x=xgb.load_model('model2.json')
+    h.load_model("model2.json")
     st.header("Epsilon Diploma Final Project")
     st.subheader('Used Cars Prediction in Egypt ')
     st.write("This project predicts used cars price based on some features")
