@@ -150,7 +150,7 @@ def app():
                 )
         st.write("Input Data: ")
         st.dataframe(df)
-        pred = model.predict(df)
+        pred = model2.predict(df)
         st.write(F"Prediction: {pred}")
 
 app()
