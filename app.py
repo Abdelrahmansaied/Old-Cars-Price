@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 from xgboost import XGBRegressor
+xgb = XGBRegressor()
 
 def app():
     xgb.load_model('model2.json')
